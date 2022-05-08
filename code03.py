@@ -9,4 +9,9 @@ def connect(filename, section):
     except(Exception) as error:
         print(error)
     finally:
-        print("finaal')
+        print("finaal")
+
+def setIC_Data():
+    stmt = "select * from redcap_data where project_id = 16"
+
+    conn = connect('database','mysql')
