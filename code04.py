@@ -18,3 +18,7 @@ def connect(filename, section):
     finally:
         print("finally")
 
+def setIC_Data():
+    stmt = "select * from redcap_data where project_id = 16"
+
+    conn, cur = connect('database', 'mysql')
